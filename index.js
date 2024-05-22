@@ -1,4 +1,5 @@
 // index.js
+dotenv.config();
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
@@ -11,14 +12,7 @@ const port = process.env.PORT || 3000;
 //   console.log(`Example app listening at http://localhost:${port}`);
 // });
 
-// index.js
-const express = require('express');
-const axios = require('axios');
-const dotenv = require('dotenv');
 
-dotenv.config();
-const app = express();
-const port = 3000;
 
 const clientId = process.env.TODOIST_CLIENT_ID;
 const clientSecret = process.env.TODOIST_CLIENT_SECRET;
