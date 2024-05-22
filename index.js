@@ -1,7 +1,11 @@
 // index.js
 dotenv.config();
 const express = require('express');
+
+
+
 const app = express();
+
 const port = process.env.PORT || 3000;
 
 // app.get('/', (req, res) => {
@@ -15,7 +19,9 @@ const port = process.env.PORT || 3000;
 
 
 const clientId = process.env.TODOIST_CLIENT_ID;
+
 const clientSecret = process.env.TODOIST_CLIENT_SECRET;
+
 const redirectUri = 'http://localhost:3000/callback';
 
 // Step 1: Redirect user to Todoist's OAuth page
